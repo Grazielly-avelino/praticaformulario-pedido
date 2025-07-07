@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pedido de Pizza</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>🍕 Bem-vindo à Pizzaria Forno de Pedra!</h1>
+  <h1>Faça seu pedido:</h1>
+  <form action="teste.jsp" method="post" id="pedidoForm">
+    Nome: <input type="text" name="NOME"><br><br>
+    Email: <input type="text" name="Email"><br><br>
+    Quantidade: <input type="number" name="Quantidade"><br><br>
+    Data da entrega: <input type="date" name="Data"><br><br>
+
+    Tamanho:<br>
+    <input type="radio" name="Tamanho" value="g"> Grande<br>
+    <input type="radio" name="Tamanho" value="m"> Médio<br>
+    <input type="radio" name="Tamanho" value="p"> Pequeno<br><br>
+
+    Sabor:
+    <select name="sabor">
+      <option value="calabresa">Calabresa</option>
+      <option value="frango">Frango com Catupiry</option>
+      <option value="quatro">Quatro Queijos</option>
+      <option value="Pepperoni">Pepperoni</option>
+      <option value="Camarão">Camarão</option>
+    </select><br><br>
+
+    Adicionais:<br>
+    <div class="adicionais">
+      <label><input type="checkbox" name="borda_recheada" value="sim"> Borda Recheada</label>
+      <label><input type="checkbox" name="queijo_extra" value="sim"> Queijo Extra</label>
+      <label><input type="checkbox" name="bacon" value="sim"> Bacon</label>
+      <label><input type="checkbox" name="azeitonas" value="sim"> Azeitonas</label>
+      <label><input type="checkbox" name="Catupiry" value="sim"> Catupiry</label>
+    </div>
+
+    Observação:<br>
+    <textarea name="mensagem" rows="5" placeholder="Escreva aqui alguma observação..."></textarea><br><br>
+
+    <input type="submit" value="Enviar Pedido">
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
